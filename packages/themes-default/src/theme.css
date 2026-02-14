@@ -1,0 +1,22 @@
+:root {
+  --color-text: #111111;
+  --color-background: #ffffff;
+  --color-accent: #0b5fff;
+  --focus-color: #0b5fff;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.ui-surface {
+  padding: var(--space-2);
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 70%);
+  border-radius: 0.5rem;
+}

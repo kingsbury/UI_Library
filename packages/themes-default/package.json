@@ -1,0 +1,6 @@
+{
+  "name": "@ui-library/themes-default",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/theme.css"
+}
