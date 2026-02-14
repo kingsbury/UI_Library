@@ -1,0 +1,28 @@
+{
+  "name": "ui-library-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Framework-agnostic UI library with Angular wrappers, Storybook docs, and Playwright + axe quality gates.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.49.0",
+    "@storybook/addon-a11y": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/html-vite": "^8.4.7",
+    "storybook": "^8.4.7",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

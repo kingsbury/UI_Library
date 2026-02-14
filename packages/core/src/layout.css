@@ -1,0 +1,65 @@
+:root {
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+}
+
+.ui-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-space, var(--space-2));
+}
+
+.ui-inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--inline-space, var(--space-2));
+}
+
+.ui-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--cluster-justify, flex-start);
+  align-items: center;
+  gap: var(--cluster-space, var(--space-1));
+}
+
+.ui-center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--center-max, 65ch);
+  padding-inline: var(--center-gutter, var(--space-2));
+}
+
+.ui-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sidebar-space, var(--space-2));
+}
+
+.ui-sidebar > :first-child {
+  flex-basis: var(--sidebar-width, 18rem);
+  flex-grow: 1;
+}
+
+.ui-sidebar > :last-child {
+  min-inline-size: 50%;
+  flex-grow: 999;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-color, #0b5fff);
+  outline-offset: 2px;
+}
