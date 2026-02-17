@@ -1,0 +1,53 @@
+:root {
+  /* color */
+  --ui-color-brand-50: #eff6ff;
+  --ui-color-brand-100: #dbeafe;
+  --ui-color-brand-500: #3b82f6;
+  --ui-color-brand-600: #2563eb;
+  --ui-color-brand-700: #1d4ed8;
+
+  --ui-color-neutral-0: #ffffff;
+  --ui-color-neutral-50: #f8fafc;
+  --ui-color-neutral-200: #e2e8f0;
+  --ui-color-neutral-700: #334155;
+  --ui-color-neutral-900: #0f172a;
+
+  --ui-color-success: #16a34a;
+  --ui-color-warning: #f59e0b;
+  --ui-color-danger: #dc2626;
+
+  /* spacing */
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-6: 1.5rem;
+  --ui-space-8: 2rem;
+
+  /* shape */
+  --ui-radius-sm: 0.375rem;
+  --ui-radius-md: 0.5rem;
+  --ui-radius-lg: 0.75rem;
+  --ui-radius-pill: 9999px;
+
+  /* typography */
+  --ui-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+  --ui-font-size-sm: 0.875rem;
+  --ui-font-size-md: 1rem;
+  --ui-font-size-lg: 1.125rem;
+  --ui-font-weight-medium: 500;
+  --ui-font-weight-semibold: 600;
+
+  /* elevation */
+  --ui-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --ui-shadow-md: 0 4px 8px rgba(15, 23, 42, 0.12);
+
+  /* semantic aliases (used by components) */
+  --ui-bg-page: var(--ui-color-neutral-50);
+  --ui-bg-surface: var(--ui-color-neutral-0);
+  --ui-bg-primary: var(--ui-color-brand-600);
+  --ui-bg-primary-hover: var(--ui-color-brand-700);
+  --ui-text-default: var(--ui-color-neutral-900);
+  --ui-text-muted: var(--ui-color-neutral-700);
+  --ui-text-on-primary: var(--ui-color-neutral-0);
+  --ui-border-default: var(--ui-color-neutral-200);
+}

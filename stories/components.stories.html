@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Library Stories - Components</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+    <style>
+      .story-grid {
+        display: grid;
+        gap: var(--ui-space-6);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .stack { display: grid; gap: var(--ui-space-3); }
+      .row { display: flex; gap: var(--ui-space-3); align-items: center; flex-wrap: wrap; }
+      .pill {
+        border: 1px solid var(--ui-border-default);
+        background: var(--ui-bg-surface);
+        color: var(--ui-text-muted);
+        border-radius: var(--ui-radius-pill);
+        padding: var(--ui-space-2) var(--ui-space-3);
+        font-size: var(--ui-font-size-sm);
+      }
+      .ui-button--danger {
+        background: var(--ui-color-danger);
+        color: var(--ui-color-neutral-0);
+      }
+    </style>
+  </head>
+  <body class="ui-page">
+    <h1 style="margin-top:0;">Component stories</h1>
+
+    <section class="story-grid">
+      <article class="ui-card stack">
+        <span class="pill">Story: Basic card</span>
+        <h2 class="ui-card__title">Welcome card</h2>
+        <p class="ui-card__body">A default card + primary action. Useful as a baseline visual check.</p>
+        <div class="row">
+          <button class="ui-button ui-button--primary">Primary action</button>
+        </div>
+      </article>
+
+      <article class="ui-card stack">
+        <span class="pill">Story: Button variants</span>
+        <h2 class="ui-card__title">Action buttons</h2>
+        <p class="ui-card__body">Primary and danger variants use tokenized colors.</p>
+        <div class="row">
+          <button class="ui-button ui-button--primary">Save</button>
+          <button class="ui-button ui-button--danger">Delete</button>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
