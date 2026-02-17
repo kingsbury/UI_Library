@@ -1,0 +1,55 @@
+{
+  "$schema": "https://www.w3.org/2022/design-tokens/schema.json",
+  "color": {
+    "brand": {
+      "50": { "value": "#eff6ff" },
+      "100": { "value": "#dbeafe" },
+      "500": { "value": "#3b82f6" },
+      "600": { "value": "#2563eb" },
+      "700": { "value": "#1d4ed8" }
+    },
+    "neutral": {
+      "0": { "value": "#ffffff" },
+      "50": { "value": "#f8fafc" },
+      "200": { "value": "#e2e8f0" },
+      "700": { "value": "#334155" },
+      "900": { "value": "#0f172a" }
+    },
+    "status": {
+      "success": { "value": "#16a34a" },
+      "warning": { "value": "#f59e0b" },
+      "danger": { "value": "#dc2626" }
+    }
+  },
+  "spacing": {
+    "2": { "value": "0.5rem" },
+    "3": { "value": "0.75rem" },
+    "4": { "value": "1rem" },
+    "6": { "value": "1.5rem" },
+    "8": { "value": "2rem" }
+  },
+  "radius": {
+    "sm": { "value": "0.375rem" },
+    "md": { "value": "0.5rem" },
+    "lg": { "value": "0.75rem" },
+    "pill": { "value": "9999px" }
+  },
+  "font": {
+    "family": {
+      "base": { "value": "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" }
+    },
+    "size": {
+      "sm": { "value": "0.875rem" },
+      "md": { "value": "1rem" },
+      "lg": { "value": "1.125rem" }
+    },
+    "weight": {
+      "medium": { "value": "500" },
+      "semibold": { "value": "600" }
+    }
+  },
+  "shadow": {
+    "sm": { "value": "0 1px 2px rgba(15, 23, 42, 0.08)" },
+    "md": { "value": "0 4px 8px rgba(15, 23, 42, 0.12)" }
+  }
+}
