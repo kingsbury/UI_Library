@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { center, inline, sidebar, stack } from '../src/primitives';
+import { box, center, inline, sidebar, stack, theme } from '../src/primitives';
 
 describe('core primitives', () => {
   it('renders stack with class and attributes', () => {
@@ -17,5 +17,15 @@ describe('core primitives', () => {
     const html = sidebar('<nav>Menu</nav>', '<article>Body</article>');
     expect(html).toContain('<aside>');
     expect(html).toContain('<main>');
+  });
+
+  it('renders box with optional class name', () => {
+    const html = box('<p>Body</p>', { className: 'invert' });
+    expect(html).toContain('class="invert ui-box"');
+  });
+
+  it('renders theme wrapper', () => {
+    const html = theme('<p>Themed content</p>');
+    expect(html).toContain('class="ui-theme"');
   });
 });
