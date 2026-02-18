@@ -30,6 +30,16 @@ export function center(content: string, options: PrimitiveOptions = {}): string 
   return `<div class="${klass}"${attrString(options.attrs)}>${content}</div>`;
 }
 
+export function box(content: string, options: PrimitiveOptions = {}): string {
+  const klass = [options.className, 'ui-box'].filter(Boolean).join(' ');
+  return `<div class="${klass}"${attrString(options.attrs)}>${content}</div>`;
+}
+
+export function theme(content: string, options: PrimitiveOptions = {}): string {
+  const klass = [options.className, 'ui-theme'].filter(Boolean).join(' ');
+  return `<div class="${klass}"${attrString(options.attrs)}>${content}</div>`;
+}
+
 export function sidebar(side: string, main: string, options: PrimitiveOptions = {}): string {
   const klass = [options.className, 'ui-sidebar'].filter(Boolean).join(' ');
   return `<div class="${klass}"${attrString(options.attrs)}><aside>${side}</aside><main>${main}</main></div>`;

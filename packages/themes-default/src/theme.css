@@ -1,22 +1,25 @@
 :root {
-  --color-text: #111111;
-  --color-background: #ffffff;
-  --color-accent: #0b5fff;
-  --focus-color: #0b5fff;
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
+  --ui-text-default: #111111;
+  --ui-bg-page: #ffffff;
+  --ui-bg-surface: #ffffff;
+  --ui-focus-color: #0b5fff;
+  --ui-space-1: 0.5rem;
+  --ui-space-2: 1rem;
+  --ui-space-3: 1.5rem;
+  --ui-border-default: color-mix(in srgb, var(--ui-text-default), transparent 70%);
+  --ui-box-color-light: #ffffff;
+  --ui-box-color-dark: #000000;
 }
 
 body {
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--ui-text-default);
+  background: var(--ui-bg-page);
   font-family: Inter, system-ui, sans-serif;
   line-height: 1.5;
 }
 
 .ui-surface {
-  padding: var(--space-2);
-  border: 1px solid color-mix(in srgb, var(--color-text), transparent 70%);
-  border-radius: 0.5rem;
+  padding: var(--ui-space-2);
+  border: 1px solid var(--ui-border-default);
+  border-radius: var(--ui-radius-md, 0.5rem);
 }
